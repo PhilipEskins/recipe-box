@@ -21,6 +21,16 @@ export class RecipeComponent implements OnInit {
     this.selectedRecipe = clickedRecipe;
   }
 
+
+  // closeDetails() {
+  //   this.recipeDetails = null;
+  // }
+  // recipeDetails = null;
+  //
+  // showDetails(showRecipe) {
+  //   this.recipeDetails = showRecipe;
+  // }
+
   ratingColor(list){
     if (list.rating === "3") {
       return "best";
@@ -30,6 +40,14 @@ export class RecipeComponent implements OnInit {
       return "okay";
     }
   }
+// click event on h3 needs to change (or toggle) value of showHideDetails from true to false
+  showHideDetails(list) {
+    if ( true ) {
+      return "hide";
+  } else {
+    return "show";
+  }
+}
 
   constructor() { }
 

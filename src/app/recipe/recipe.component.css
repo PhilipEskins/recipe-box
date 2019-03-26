@@ -9,3 +9,10 @@
 .okay {
   color: brown;
 }
+
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
